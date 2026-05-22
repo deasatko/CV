@@ -12,6 +12,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
+\usepackage{ragged2e}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -41,7 +42,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {\justifying #1 \vspace{-1pt}}
   }
 }
 
@@ -53,7 +54,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.94\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
@@ -61,14 +62,14 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.94\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.94\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -79,7 +80,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, topsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt, rightmargin=0.18in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 
@@ -92,6 +93,20 @@
     \small\textit{Middle Office $|$ Product Control $|$ Risk \& P\&L $|$ Fixed Income \& Structured Products}
 \end{center}
 
+\vspace{4pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Queen Mary University}{2020 -- 2021}
+      {Master of Science: Accounting and Finance, Grade: Merit}{London, UK}
+    \resumeSubheading
+      {University of East London}{2017 -- 2020}
+      {Bachelor of Arts: Accounting and Finance, Grade: First Class}{London, UK}
+  \resumeSubHeadingListEnd
+
+\vspace{4pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -101,12 +116,14 @@
       {Deutsche Bank}{Dec 2025 -- Present}
       {Kannon Risk and Profit \& Loss (RPL) Specialist, Associate}{London, UK}
       \resumeItemListStart
-        \resumeItem{Support the Kannon Middle Office team within Fixed Income \& Currencies, partnering with Trading, Global Strategic Analytics, Finance, Operations, and Infrastructure to maintain trade capture accuracy, risk integrity, and P\&L reporting.}
+        \resumeItem{Support the Kannon Middle Office team within Fixed Income \& Currencies, partnering with Trading, Global Strategic Analytics, Finance, Operations, and Infrastructure to maintain accurate trade capture, risk integrity, and P\&L reporting.}
         \resumeItem{Monitor intraday trade bookings using IRIS and reconciliation tools, investigating trade booking discrepancies, valuation breaks, cash flow mismatches, and position / risk exceptions.}
         \resumeItem{Support the end-of-day close by resolving exceptions, performing position, risk, and P\&L substantiation, and escalating control issues impacting front-office and finance reporting.}
         \resumeItem{Provide product coverage across Rates, Credit, and Emerging Markets, including interest rate swaps, credit default swaps, bonds, and futures across OTC, exchange-traded, and cash instruments.}
         \resumeItem{Contribute to control enhancement and platform migration initiatives across Kannon, IRIS, Summit, Trade Manager, and related risk and operational workflows.}
       \resumeItemListEnd
+
+\vspace{1pt}
 
     \resumeSubheading
       {Marex Solutions}{2022 -- 2024}
@@ -120,21 +137,12 @@
 
    \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Queen Mary University}{2020 -- 2021}
-      {Master of Science: Accounting and Finance, Grade: Merit}{London, UK}
-    \resumeSubheading
-      {University of East London}{2017 -- 2020}
-      {Bachelor of Arts: Accounting and Finance, Grade: First Class}{London, UK}
-  \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
+\vspace{4pt}
+  
+%-----------SKILLS-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+ \begin{itemize}[leftmargin=0.15in, label={}, rightmargin=0.18in]
+    \small{\item{\justifying
      \textbf{Core Banking Skills}{: Fixed Income \& Currencies, Risk \& P\&L Control, Trade Capture, Trade Lifecycle, End-of-Day Close, Position, Risk \& P\&L Substantiation, P\&L Variance Analysis, Trade, Position \& Cash Reconciliations, Settlements, Break Resolution, Operational Risk, Stakeholder Management, Front Office Liaison, Corporate Actions} \\
      \textbf{Products}{: Structured Products, OTC and Exchange-Traded Derivatives, Bonds, Futures, Interest Rate Swaps, Credit Default Swaps} \\
      \textbf{Systems}{: Kannon, IRIS, Summit, Trade Manager, RMS, Bloomberg, ICE Data Derivatives, Excel, Oracle PeopleSoft, Jira} \\
